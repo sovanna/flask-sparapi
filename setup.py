@@ -31,7 +31,8 @@ setup(
   include_package_data=True,
   platforms='any',
   install_requires=[
-    'Flask'
+    'Flask>=0.10.1',
+    'redis>=2.9.1'
   ],
   classifiers=[
     'Environment :: Web Environment',

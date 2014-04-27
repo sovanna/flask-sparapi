@@ -1,0 +1,3 @@
+# -*- coding: utf-8 -*-
+DEBUG = True
+SECRET_KEY = '\xac\xa40}<\xa0)~\xe9\xe8\x0bg\xbb\xaf~Ry\xfc`\x88\x9d\xfey*'
