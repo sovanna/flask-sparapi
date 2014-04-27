@@ -43,19 +43,3 @@ Now, something more bigger will coming out in the next few months..
 (another great, usefull and lovely extension called Flask-......)
 
 -_- this is a secret
-
-
-TODO
-----
-
-- func to add new consumer on redis store
-- param to choose on which request method the secure has to be applied 
-- implement other store
-- doc
-- pypi
-- ...
-
-Travis-ci
----------
-The failing is due to connection to redis localhost:6379.
-Moreover, I've added travis just for testing purpose
