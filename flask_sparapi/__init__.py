@@ -42,7 +42,11 @@ class Sparapi(object):
       app.config.setdefault('SPARAPI_' + key, value)
 
     with app.app_context():
-      self.cRedis = datastore.ConnecterRedis()
+      try:
+        self.cRedis = datastore.ConnecterRedis()
+      except Exception, e:
+        raise e
+
       self.cRedis.set_consumer(utils.config_value('KEY'),\
                                utils.config_value('SECRET'))
 
