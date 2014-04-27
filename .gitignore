@@ -54,3 +54,6 @@ docs/_build/
 
 # No virtualenv folder
 venv
+
+# OSX SHIT
+.DS_Store
