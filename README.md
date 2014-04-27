@@ -1,7 +1,7 @@
 flask-sparapi
 =============
 
-[![Build Status](https://magnum.travis-ci.com/sovanna/flask-sparapi.svg?token=qzFu9Qfosru1rcm6YHB5&branch=master)](https://magnum.travis-ci.com/sovanna/flask-sparapi)
+[![Build Status](https://travis-ci.org/sovanna/flask-sparapi.svg)](https://travis-ci.org/sovanna/flask-sparapi)
 
 A fast and simple way to secure API for Flask applications
 
