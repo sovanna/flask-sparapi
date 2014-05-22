@@ -3,6 +3,14 @@ Flask-Sparapi Changelog
 
 Here you can see the full list of changes between each Flask-Sparapi release.
 
+Version 1.0.1
+-------------
+Cosmetics,
+Add function to add new Consumer, providing key/secret
+Fix the yml for Travis, simply add redis-server services
+When create connection with redis, try reading 'REDIS_HOST' config key or 'localhost'
+
+
 Version 1.0.0
 -------------
 

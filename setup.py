@@ -19,7 +19,7 @@ from setuptools import setup
 
 setup(
   name='Flask-Sparapi',
-  version='1.0.0',
+  version='1.0.1',
   url='https://github.com/sovanna/flask-sparapi',
   license='BSD (3-Clause) License',
   author='Sovanna Hing',
