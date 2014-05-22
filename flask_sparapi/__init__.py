@@ -110,3 +110,13 @@ class Sparapi(object):
       
       return func(*args, **kwargs)
     return decorated
+
+
+  def new_consumer(self, key, secret):
+    """Define a new consumer with key and secret
+    
+    :param key: The consumer KEY
+    :param secret: The consumer SECRET
+    """
+    self.cRedis.set_consumer(key, secret)
+    return dict(key=key, secret=self.cRedis.get_consumer_secret(key))
