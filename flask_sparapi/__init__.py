@@ -43,7 +43,11 @@ class Sparapi(object):
 
     with app.app_context():
       try:
-        self.cRedis = datastore.ConnecterRedis()
+        if 'REDIS_HOST' in self.app.config:
+          host = self.app.config['REDIS_HOST']
+        else:
+          host = 'localhost'
+        self.cRedis = datastore.ConnecterRedis(host=host)
       except Exception, e:
         raise e
 
