@@ -37,7 +37,7 @@ class ConnecterRedis(object):
     :param consumer_key: The consumer key for which we store the nonce
     :param nonce: The nonce to store
     """
-    hkey = '%s:nonce:consumer:%s' % (self.root, consumer_key)
+    hkey = '%s:nonces:consumers:%s' % (self.root, consumer_key)
     return self.r.set(hkey, nonce)
 
 
@@ -46,7 +46,7 @@ class ConnecterRedis(object):
 
     :param consumer_key: The consumer key for which we want the nonce
     """
-    hkey = '%s:nonce:consumer:%s' % (self.root, consumer_key)
+    hkey = '%s:nonces:consumers:%s' % (self.root, consumer_key)
     return self.r.get(hkey)
 
 
@@ -56,7 +56,7 @@ class ConnecterRedis(object):
     :param key: The consumer KEY
     :param secret: The consumer SECRET
     """
-    hkey = '%s:consumer:%s' % (self.root, key)
+    hkey = '%s:consumers:%s' % (self.root, key)
     if self.r.set(hkey, secret):
       self.set_nonce(key, 0)
       return True
@@ -68,5 +68,5 @@ class ConnecterRedis(object):
 
     :param key: The key of the consumer
     """
-    hkey = '%s:consumer:%s' % (self.root, key)
+    hkey = '%s:consumers:%s' % (self.root, key)
     return self.r.get(hkey)
