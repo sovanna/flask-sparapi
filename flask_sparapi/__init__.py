@@ -45,7 +45,8 @@ class Sparapi(object):
         with app.app_context():
             try:
                 self.cRedis = datastore.ConnecterRedis(
-                    host=app.config['REDIS_HOST'])
+                    host=app.config['REDIS_HOST'],
+                    port=app.config['REDIS_PORT'])
             except Exception, e:
                 raise e
 
