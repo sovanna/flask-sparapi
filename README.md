@@ -1,8 +1,6 @@
 flask-sparapi
 =============
 
-[![Build Status](https://travis-ci.org/sovanna/flask-sparapi.svg)](https://travis-ci.org/sovanna/flask-sparapi)
-
 A fast and simple way to secure API for Flask applications
 
 Resources
@@ -27,7 +25,7 @@ Basically, just import and initialize it, then use the decorator `sparapi.secure
 
 	from flask_sparapi import Sparapi
 	sparapi = Sparapi(app)
-	
+
 	@app.route('/', methods=['POST'])
 	@sparapi.secure
 	def index():
